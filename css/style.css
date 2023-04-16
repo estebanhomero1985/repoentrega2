@@ -54,7 +54,7 @@ h5{
 
 .botonera{
     display: flex;
-    background-color: rgb(102, 69, 28);
+    background-color: #1c1c1c;
     border: solid 1px black;
     height: auto;
     flex-direction: row;
@@ -66,9 +66,12 @@ h5{
 
 
 
+
 #centrar{
+    
     display: flex;
-    align-items: center;
+    justify-content: center;
+    
 }
 
 #abajo{
@@ -87,4 +90,85 @@ main div p{
     font-weight: 700;
 }
 
+.anchofotos{
+    width: 66%;
+}
+
+.borderform{
+    margin: 10px;
+    border: dashed rgb(102, 69, 28) 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+label{
+    color:rgb(102, 69, 28);
+    font-weight: 700; 
+    font-size: 30px;
+}    
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+svg{
+    width: 100px;
+    height: auto;
+}
+
+
+
+@media (width<700px){
+ 
+    .iconos{
+        display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    }
+}
+
+@media (width<500px) {
+    #maps{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+       }
+    .iconosredes svg{
+        width: 50px;
+        margin-top: 10px;
+      
+    }
+
+    .iconosredes{
+        display: flex;
+        
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (width<908px) and (width>700px){
+    .iconosredes{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (width<992px) {
+    .centrarfotos{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+
+}
 

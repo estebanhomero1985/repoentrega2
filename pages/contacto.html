@@ -6,70 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carpinteria Blanco S.R.L. - Contacto </title>
     <link rel="shortcut icon" href="../img/logo3.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    
 </head>
 <body>
-    <nav>
-        <a href="../index.html">
-        <img src="../img/logo3.png" alt="logo de la empresa Carpinteria Blanco">
-    </a>
-    <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="nosotros.html">NOSOTROS</a></li>
-        <li><a href="nuestrostrabajos.html">NUESTROS TRABAJOS</a></li>
-        <li><a href="faq.html">F.A.Q.</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
-    
-    </ul>
-    </nav>
 
-    <header>
-        <img src="../img/banner.png" alt="Foto de una cocina realizada por la empresa">
-    </header>
-    <main >
-        <section class="gridcontacto">
-            
-        <div id="formulario">
-            
-            
-            <h2>Formulario De contacto</h2>
-        
-            
-                <div >
-                <form action="datos.php">
-                 </div>
-                 <div>
-                <label for="Nombre" >Nombre</label>
-                <input type="text" id="Nombre" placeholder="Juan Perez">
-                </div>
-                <div>
-                <label for="Telefono">Telefono</label>
-                <input type="tel" id="Telefono" placeholder="Caracteristica+Telefono">
-                </div>
-                <div>
-                <label for="Email">Email</label>
-                <input type="email" id="Email" placeholder="example@domain.com">
-                </div>
+    <!--INICIA NAV SUPERIOR-->
+    <nav class="navbar navbar-expand-lg botonera" >
+        <div class="container-fluid" id="abajo">
+          <a href="../index.html">
+            <img src="../img/logo3.png" alt="LOGO DE LA EMPRESA CARPINTERIA BLANCO">
+          </a>
 
-            <div>     
-            <label for="Comentario">Comentario</label>
-            <textarea name="Comentario" id="Comentario" cols="30" rows="10"></textarea>
-            <div>
-            <input type="reset" value="Cancelar">
-            <input type="Submit" value="Enviar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+            <ul class="navbar-nav ms-auto">
+                
+                <li><a href="../pages/nosotros.html" class="linksnav">NOSOTROS</a></li>
+                <li><a href="../pages/nuestrostrabajos.html" class="linksnav">NUESTROS TRABAJOS</a></li>
+                <li><a href="../pages/faq.html" class="linksnav">F.A.Q.</a></li>
+                <li><a href="../pages/contacto.html" class="linksnav">CONTACTO</a></li>
+            </ul>
+          
             </div>
-            </div>
-            
-            </form>
         </div>
+        
+      </nav>
 
+    <!--FINALIZA NAV SUPERIOR Y EMPIEZA HEADER CARROUSEL-->   
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/carrousel1.png" class="d-block w-100" alt="FOTO DESLIZABLE NUMERO 1">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/carrousel2.png" class="d-block w-100" alt="FOTO DESLIZABLE NUMERO 3">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/carrousel3.png" class="d-block w-100" alt="FOTO DESLIZABLE NUMERO 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
+
+    <main>
+        <section>
+            <form class="col g-3 borderform">
+
+                <div class="col-md-4">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="example@example.com">
+                </div>               
+                <div class="col-md-4">
+                  <label for="cel" class="form-label">Telefono</label>
+                  <input type="tel" class="form-control" id="cel" placeholder="Caracteristica + Telefono">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputCity" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="Ingrese ciudad">
+                </div>
+                
+                
+                
+                <div class="col-md-4">
+                  <button type="submit" class="btn btn-primary">ACEPTAR</button>
+                </div>
+              </form>
+        </div>
+        <div class="iconos" >
         <article id="maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0476208914847!2d-58.49598888372123!3d-34.65350026764316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9093eaf7f09%3A0xfe3888fb9169e731!2sAv.%20Directorio%205390%2C%20C1440%20CABA!5e0!3m2!1ses!2sar!4v1678992497607!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </article>
 
-        <article id="redes">
-        
+        <article class="iconosredes">        
             
             <a href="https://www.instagram.com" target="_blank">
                 <svg  xmlns="http://www.w3.org/2000/svg"class="bi bi-instagram " viewBox="0 0 16 16" >
@@ -89,30 +118,45 @@
                   </svg>
             </a>
             </article>
+          </div>
         </section>
     </main>
-    <nav>
-            
-        <a href="../index.html">
-         <img src="../img/logo3.png" alt="logo de la empresa Carpinteria Blanco">
-         </a>  
-         <div>
-            <h4>AV. DIRECTORIO 5390 - CABA.</h4>
-            <h4>Cel: +54 11 6237-9372</h4>
-            <h4>info@carpinteriablancosrl.com</h4>
-         </div>     
-    <ul class="linksarriba">
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="nosotros.html">NOSOTROS</a></li>
-        <li><a href="nuestrostrabajos.html">NUESTROS TRABAJOS</a></li>
-        <li><a href="faq.html">F.A.Q.</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
-    
-    </ul>
-                
-</nav>
+    <!--FINALIZA MAIN E INICIA NAV INFERIOR-->
 
-<h5>Todas las imagenes son propiedad intelectual de Carpinteria Blanco S.R.L. - Prohibido su uso.</h5>
+    <nav class="navbar navbar-expand-lg botonera" >
+        <div class="container-fluid">
+          <a href="../index.html">
+            <img src="../img/logo3.png" alt="LOGO DE LA EMPRESA CARPINTERIA BLANCO">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+            <ul class="navbar-nav ms-auto">
+                
+                <li><a href="../pages/nosotros.html" class="linksnav">NOSOTROS</a></li>
+                <li><a href="../pages/nuestrostrabajos.html" class="linksnav">NUESTROS TRABAJOS</a></li>
+                <li><a href="../pages/faq.html" class="linksnav">F.A.Q.</a></li>
+                <li><a href="../pages/contacto.html" class="linksnav">CONTACTO</a></li>
+            </ul>
+          
+            </div>
+        </div>
+        
+      </nav>
+
+      <!-- FINALIZA NAV INFERIOR-->
+
+      <h5>Todas las imagenes son propiedad intelectual de Carpinteria Blanco S.R.L. - Prohibido su uso.</h5>
+   
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     
 </body>
 </html>
