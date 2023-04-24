@@ -1,0 +1,92 @@
+h1{
+    font-family: $mainfont;
+    font-size: $textxl;
+    color: $colorclaro;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: $mainstyle;
+}
+
+h2{
+    font-family: $mainfont;
+    color:$secondarycolor;  
+    font-size:$textlg;
+    font-style: $mainstyle;
+}
+
+h3{
+    font-family: $mainfont;
+    color:$coloroscuro;
+    font-size:$textmd;
+    font-style: $mainstyle;
+}
+
+h4{
+    color: $secondarycolor;
+    font-size: $textsm;
+    font-style: $mainstyle;
+}
+
+h5{
+    text-align: center;
+    font-size: $textxs;
+    color: $colorclaro;
+    font-style: $mainstyle;
+}
+
+
+#centrar{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+#abajo{
+    display: flex;
+    align-items: flex-end;
+}
+
+main div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main div p{
+    color: $colorcontraste;
+    font-size: $textxl;
+    font-weight: $fontbold;
+}
+
+.anchofotos{
+    width: 66%;
+}
+
+.borderform{
+    margin: 10px;
+    border: dashed $secondarycolor 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+label{
+    color: $secondarycolor;
+    font-weight: $fontbold; 
+    font-size: $textxl;
+}    
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+svg{
+    width: 100px;
+    height: auto;
+    fill: $secondarycolor;
+    
+}

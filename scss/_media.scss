@@ -1,0 +1,50 @@
+
+@media (width<700px){
+ 
+    .iconos{
+        display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    }
+}
+
+@media (width<500px) {
+    #maps{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+       }
+    .iconosredes svg{
+        width: 50px;
+        margin-top: 10px;
+      
+    }
+
+    .iconosredes{
+        display: flex;
+        
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (width<908px) and (width>700px){
+    .iconosredes{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (width<992px) {
+    .centrarfotos{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+
+}

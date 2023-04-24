@@ -1,0 +1,32 @@
+.botonera{
+    background-color: $maincolor;
+    display: flex;
+    border: solid 1px black;
+    height: auto;
+    flex-direction: row;
+
+    img{
+        width: 100px; 
+    }
+
+    li{
+        a{
+            color: $colorclaro;
+            text-decoration: none; 
+            margin-right: 55px;
+            font-weight: $fontbold; 
+            font-style: $mainstyle;
+            font-size: $textxl;
+            &:hover{
+                color: $secondarycolor;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+

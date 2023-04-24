@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@import "_vars";
+@import "_commons";
+@import "_nav";
+@import "_media";
+
+body{
+    background-image: url(../img/background.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+   }

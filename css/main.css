@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  color: rgb(243, 235, 235);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(102, 69, 28);
+  font-size: 20px;
+  font-style: italic;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(147, 143, 150);
+  font-size: 17px;
+  font-style: italic;
+}
+
+h4 {
+  color: rgb(102, 69, 28);
+  font-size: 14px;
+  font-style: italic;
+}
+
+h5 {
+  text-align: center;
+  font-size: 12px;
+  color: rgb(243, 235, 235);
+  font-style: italic;
+}
+
+#centrar {
+  display: flex;
+  justify-content: center;
+}
+
+#abajo {
+  display: flex;
+  align-items: flex-end;
+}
+
+main div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+main div p {
+  color: darkslategrey;
+  font-size: 32px;
+  font-weight: 0, 700;
+}
+
+.anchofotos {
+  width: 66%;
+}
+
+.borderform {
+  margin: 10px;
+  border: dashed rgb(102, 69, 28) 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  color: rgb(102, 69, 28);
+  font-weight: 0, 700;
+  font-size: 32px;
+}
+
+.iconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+svg {
+  width: 100px;
+  height: auto;
+  fill: rgb(102, 69, 28);
+}
+
+.botonera {
+  background-color: #1c1c1c;
+  display: flex;
+  border: solid 1px black;
+  height: auto;
+  flex-direction: row;
+}
+.botonera img {
+  width: 100px;
+}
+.botonera li a {
+  color: rgb(243, 235, 235);
+  text-decoration: none;
+  margin-right: 55px;
+  font-weight: 0, 700;
+  font-style: italic;
+  font-size: 32px;
+}
+.botonera li a:hover {
+  color: rgb(102, 69, 28);
+}
+
+@media (width < 700px) {
+  .iconos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (width < 500px) {
+  #maps {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+  }
+  .iconosredes svg {
+    width: 50px;
+    margin-top: 10px;
+  }
+  .iconosredes {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (width < 908px) and (width > 700px) {
+  .iconosredes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (width < 992px) {
+  .centrarfotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body {
+  background-image: url(../img/background.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/*# sourceMappingURL=main.css.map */
