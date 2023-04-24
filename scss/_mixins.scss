@@ -1,0 +1,36 @@
+@mixin textos($size,$weight,$color)
+{
+    font-family: $mainfont;
+    font-style: $mainstyle;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+h1{
+    @include textos($textxl,$fontbold,$colorclaro);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; 
+    }
+
+h2{
+    @include textos($textlg,$fontbold,$secondarycolor);
+   }
+
+h3{
+    @include textos($textmd,$fontbold,$coloroscuro);
+   }
+
+h4{
+    @include textos($textsm,$fontbold,$secondarycolor );
+   }
+
+h5{
+    @include textos($textxs,$fontbold,$colorclaro);
+    text-align: center;
+    }
+
+div article p{
+    @include textos($textlg,$fontlight,$colorclaro);
+    }

@@ -1,39 +1,8 @@
-h1{
-    font-family: $mainfont;
-    font-size: $textxl;
-    color: $colorclaro;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-style: $mainstyle;
-}
-
-h2{
-    font-family: $mainfont;
-    color:$secondarycolor;  
-    font-size:$textlg;
-    font-style: $mainstyle;
-}
-
-h3{
-    font-family: $mainfont;
-    color:$coloroscuro;
-    font-size:$textmd;
-    font-style: $mainstyle;
-}
-
-h4{
-    color: $secondarycolor;
-    font-size: $textsm;
-    font-style: $mainstyle;
-}
-
-h5{
-    text-align: center;
-    font-size: $textxs;
-    color: $colorclaro;
-    font-style: $mainstyle;
-}
+body{
+    background-image: url(../img/background.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+   }
 
 
 #centrar{

@@ -2,10 +2,7 @@
 @import "_vars";
 @import "_commons";
 @import "_nav";
+@import "_mixins";
 @import "_media";
 
-body{
-    background-image: url(../img/background.png);
-    background-repeat: repeat;
-    background-attachment: fixed;
-   }
+
