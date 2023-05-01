@@ -1,2 +1,7 @@
 *.jpg
+*.vsc
+*.log
+*.ia
+*.psd
+*.map
 node_modules/

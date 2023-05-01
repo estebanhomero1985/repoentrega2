@@ -55,7 +55,29 @@ label{
 
 svg{
     width: 100px;
+    margin-right: 1em;
     height: auto;
     fill: $secondarycolor;
     
 }
+
+.btn-color{
+    background-color: $secondarycolor;
+    border: solid $colorclaro;
+}
+
+.skew:hover{
+    @extend .btn-color;
+    transform: skew(-45deg);
+    transition: all 1s;
+    cursor: pointer;
+        
+    }
+
+.contenedor-error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
