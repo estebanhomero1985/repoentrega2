@@ -28,12 +28,45 @@ h3 {
   text-align: center;
 }
 
-div article p {
+.text-size {
   font-family: "Roboto", sans-serif;
   font-style: italic;
-  font-size: 20px;
-  font-weight: 1, 300;
+  font-size: 40px;
+  font-weight: 0, 700;
   color: rgb(243, 235, 235);
+}
+
+.grid {
+  width: 99%;
+  display: grid;
+}
+
+.grid-template-columns-row {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0, 1fr 3fr 0, 1fr;
+  grid-template-areas: "navsuperior navsuperior" "galeria1 galeria2" "navinferior navinferior";
+}
+
+#navsuperior {
+  grid-area: navsuperior;
+}
+
+#galeria1 {
+  grid-area: galeria1;
+}
+
+#galeria2 {
+  grid-area: galeria2;
+}
+
+#navinferior {
+  grid-area: navinferior;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .botonera {
@@ -77,16 +110,6 @@ body {
 main div {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-main div p {
-  color: rgb(47, 79, 52);
-  font-size: 40px;
-  font-weight: 0, 700;
-}
-
-.anchofotos {
-  width: 66%;
 }
 
 .borderform {
@@ -185,6 +208,34 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .text-size {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 0, 700;
+    color: rgb(243, 235, 235);
+  }
+}
+@media (width < 1400px) {
+  .grid-template-columns-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0, 1fr 3fr 3fr 0, 1fr;
+    grid-template-areas: "navsuperior" "galeria1" "galeria2" "navinferior";
+  }
+}
+@media (width < 1643px) {
+  .text-size {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 0, 700;
+    color: rgb(243, 235, 235);
+  }
+}
+@media (width < 1250px) and (width > 991px) {
+  .botonera li a {
+    font-size: 25px;
   }
 }
 

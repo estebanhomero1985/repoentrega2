@@ -24,8 +24,8 @@ h3{
     text-align: center;
 }
 
-
-
-div article p{
-    @include textos($textlg,$fontlight,$colorclaro);
+ .text-size{
+    @include textos($textxl,$fontbold,$colorclaro);
     }
+
+ 

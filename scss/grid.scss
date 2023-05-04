@@ -1,0 +1,44 @@
+.grid{
+    width: 99%;
+    display: grid;
+    
+}
+
+.grid-template-columns-row{
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0,1fr 3fr 0,1fr;
+    grid-template-areas: 
+    "navsuperior navsuperior"
+    "galeria1 galeria2"
+    "navinferior navinferior";
+}
+
+#navsuperior{
+
+    grid-area: navsuperior;
+
+}
+
+#galeria1{
+    grid-area: galeria1;
+    
+   
+    
+}
+#galeria2{
+    grid-area: galeria2;
+   
+}
+
+#navinferior{
+    grid-area: navinferior;
+
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+

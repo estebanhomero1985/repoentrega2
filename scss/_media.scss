@@ -51,6 +51,39 @@
         align-items: center;
         
     }
+    .text-size{
+        @include textos($textmd,$fontbold,$colorclaro);
+    }
 
+}
+
+@media (width<1400px){
+    .grid-template-columns-row{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0,1fr 3fr 3fr 0,1fr;
+    grid-template-areas: 
+    "navsuperior"
+    "galeria1" 
+    "galeria2"
+    "navinferior";  
+}
+}
+
+@media (width<1643px){
+    .text-size{
+        @include textos($textmd,$fontbold,$colorclaro);
+        
+    }
+}
+
+@media (width<1250px) and (width>991px){
+
+    .botonera{
+                li a{
+            
+                    font-size: $textlg;
+            
+                     }
+            }
 
 }
