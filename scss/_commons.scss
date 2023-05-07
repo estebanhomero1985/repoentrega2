@@ -56,9 +56,9 @@ svg{
     border: solid $colorclaro;
 }
 
-.skew:hover{
+.skew2:hover{
     @extend .btn-color;
-    transform: skew(-45deg);
+    transform: skew(50deg);
     transition: all 1s;
     cursor: pointer;
         
