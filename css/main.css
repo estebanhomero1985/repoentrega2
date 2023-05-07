@@ -146,8 +146,8 @@ svg {
 }
 
 .skew:hover {
-  transform: skew(-45deg);
-  transition: all 1s;
+  transform: skew(-15deg);
+  transition: all 0.5s;
   cursor: pointer;
 }
 

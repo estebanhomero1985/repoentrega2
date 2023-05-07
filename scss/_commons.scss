@@ -56,10 +56,10 @@ svg{
     border: solid $colorclaro;
 }
 
-.skew2:hover{
+.skew:hover{
     @extend .btn-color;
-    transform: skew(50deg);
-    transition: all 1s;
+    transform: skew(-15deg);
+    transition: all 0.5s;
     cursor: pointer;
         
     }
